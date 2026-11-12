@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OS2.0.206.0.VGQMIXM.
+## are from OS3.0.306.0.WPOMIXM.
 ## variant: GLOBAL
 
 # AAL
@@ -10,11 +10,12 @@ vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 
 # Audio
-vendor/firmware/awinic_params.bin
-vendor/firmware/awinic_sinwave_params.bin
+vendor/firmware/sipa.bin
+vendor/firmware/frsm-spk1.bin
 vendor/lib64/hw/audio.primary.mediatek.so:vendor/lib64/hw/audio.primary.mt6835.so;FIX_SONAME
 vendor/lib64/hw/audio.r_submix.mediatek.so:vendor/lib64/hw/audio.r_submix.mt6835.so;FIX_SONAME
-vendor/lib64/hw/awinic.audio.effect.so;FIX_SONAME
+vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
+vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-stock.so;FIX_SONAME
@@ -44,6 +45,8 @@ vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@8.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Audio calibration
 vendor/etc/audio_param/AudioParamOptions_mgvi.xml
@@ -1260,16 +1263,10 @@ vendor/lib64/libksensor.so
 vendor/lib64/sensors.touch.detect.so
 
 # Touchscreen
-vendor/firmware/novatek_ts_hkc_fw.bin
-vendor/firmware/novatek_ts_hkc_mp.bin
 vendor/firmware/novatek_ts_truly_fw.bin
 vendor/firmware/novatek_ts_truly_mp.bin
-vendor/firmware/focaltech_ts_fw_BOE.bin
-vendor/firmware/novatek_ts_hkc_fw.bin:vendor_ramdisk/lib/firmware/novatek_ts_hkc_fw.bin
-vendor/firmware/novatek_ts_hkc_mp.bin:vendor_ramdisk/lib/firmware/novatek_ts_hkc_mp.bin
-vendor/firmware/novatek_ts_truly_fw.bin:vendor_ramdisk/lib/firmware/novatek_ts_truly_fw.bin
-vendor/firmware/novatek_ts_truly_mp.bin:vendor_ramdisk/lib/firmware/novatek_ts_truly_mp.bin
-vendor/firmware/focaltech_ts_fw_BOE.bin:vendor_ramdisk/lib/firmware/focaltech_ts_fw_BOE.bin
+vendor/firmware/focaltech_ts_fw_hkc.bin
+vendor/firmware/omnivision_ts_boe_fw.img
 
 # Trusted Execution Environment (TEE)
 vendor/bin/miteelog
